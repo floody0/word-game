@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Word Game</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="main_container container">
+                <div class="title">
+                    <h1 class="game_title">Word Game!</h1>
+                </div>
+                <form action="" class="form">
+                    <div class="form_item">
+                        <label class="form_label" for="form_input_word">Введите слово</label>
+                        <input id="form_input_word" type="text" class="form_input" required>
+                    </div>
+                    <div class="form_item">
+                        <label class="form_label" for="form_input_lifes">Введите количество жизней</label>
+                        <input id="form_input_lifes" type="number"  min='1' max="9" class="form_input" required>
+                    </div>
+                    <button class="start_button">Начать</button>
+                </form>
+                <div class="game_block">
+                    <div class="button_row">
+                        <button class="back_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                            <p>Назад</p>
+                        </button>
+                    </div>
+                    <div class="lives_row"></div>
+                    <div class="word_row">
+                        <div class="word"></div>
+                    </div>
+                    <div class="letters_row">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
